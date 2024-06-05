@@ -71,8 +71,8 @@ export default function Chart({label, datasets}: ChartProps) {
     return (
     <div className='pb-12 bg-white p-4'>
       <h1>{label}</h1>
-      <div className='w-full h-96 text-center'>
-        <Line data={data} options={options} className='mx-auto w-full'/>
+      <div className='w-full h-96 text-center oxerflow-x-auto'>
+        <Line data={data} options={options} className='mx-auto w-full' style={{overflowX: 'scroll'}}/>
       </div>
       
     </div>
